@@ -2,12 +2,12 @@ import org.hamcrest.CoreMatchers.equalTo
 import org.junit.Assert.*
 import org.junit.Test
 
-class ReverseStringTest {
+class StringReverseTest {
 
     @Test
-    fun `given "a,b$c" when string is reversed then "c,b$a"`() {
+    fun `text should be reversed when text is equals to "a,b$c"`() {
         val input = "a,b\$c"
-        val testObject = ReverseString()
+        val testObject = StringReverse()
 
         val output = testObject.reverse(input)
 
@@ -15,9 +15,9 @@ class ReverseStringTest {
     }
 
     @Test
-    fun `given "Ab,c,de!$" when string is reversed then "ed,c,bA!$"`() {
+    fun `text should be reversed when text is equals to "Ab,c,de!$"`() {
         val input = "a,b\$c"
-        val testObject = ReverseString()
+        val testObject = StringReverse()
 
         val output = testObject.reverse(input)
 

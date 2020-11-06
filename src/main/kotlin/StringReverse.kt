@@ -1,17 +1,17 @@
 
-class ReverseString {
+class StringReverse {
 
-    fun reverse(input: String): String {
-        val arr = Array(input.length) { input[it] }
+    fun reverse(text: String): String {
+        val arr = Array(text.length) { text[it] }
         var start = 0
-        var end = input.length - 1
+        var end = text.length - 1
         while (start < end) {
-            if (input[start].isLetter().not()) {
+            if (text[start].isLetter().not()) {
                 start++
-            } else if (input[end].isLetter().not()) {
+            } else if (text[end].isLetter().not()) {
                 end--
             } else {
-                val temp = input[start]
+                val temp = text[start]
                 arr[start] = arr[end]
                 arr[end] = temp
                 start++
