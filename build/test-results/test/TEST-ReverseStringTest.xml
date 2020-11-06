@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReverseStringTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-11-06T04:25:05" hostname="C02CTG7UMD6M" time="0.009">
-  <properties/>
-  <testcase name="given &quot;Ab,c,de!$&quot; when string is reversed then &quot;ed,c,bA!$&quot;" classname="ReverseStringTest" time="0.009"/>
-  <testcase name="given &quot;a,b$c&quot; when string is reversed then &quot;c,b$a&quot;" classname="ReverseStringTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
