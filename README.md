@@ -1,1 +1,1 @@
-# strings-kotlin
+# Algorithms
