@@ -15,7 +15,7 @@ class TripletsTest {
     }
 
     @Test
-    fun `text should be reversed when text is equals to {5, 1, 3, 4, 7}`() {
+    fun `count should be 4 when array is equals to {5, 1, 3, 4, 7}`() {
         val arr = arrayOf(5, 1, 3, 4, 7)
         val testObject = Triplets(arr)
 
