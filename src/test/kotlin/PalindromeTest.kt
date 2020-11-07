@@ -83,4 +83,55 @@ class PalindromeTest {
 
         assertThat(output, equalTo(false))
     }
+
+    @Test
+    fun `result should contain all possible palindromic partitions when text is equals to "nitin"`() {
+        val input = "nitin"
+        val testObject = Palindrome()
+        val expected = listOf(
+            "n i t i n",
+            "n iti n",
+            "nitin"
+        )
+
+        val components = mutableListOf<String>()
+        testObject.getPalindromicPartitions(components, input, "", 0)
+
+        assertThat(components, equalTo(expected))
+    }
+
+    @Test
+    fun `result should contain all possible palindromic partitions when text is equals to "geeks"`() {
+        val input = "geeks"
+        val testObject = Palindrome()
+        val expected = listOf(
+            "g e e k s",
+            "g ee k s"
+        )
+
+        val partitions = mutableListOf<String>()
+        testObject.getPalindromicPartitions(partitions, input, "", 0)
+
+        assertThat(partitions, equalTo(expected))
+    }
+
+    @Test
+    fun `result should contain all possible palindromic partitions when text is equals to "abaaba"`() {
+        val input = "abaaba"
+        val testObject = Palindrome()
+        val expected = listOf(
+            "a b a a b a",
+            "a b a aba",
+            "a b aa b a",
+            "a baab a",
+            "aba a b a",
+            "aba aba",
+            "abaaba"
+        )
+
+        val partitions = mutableListOf<String>()
+        testObject.getPalindromicPartitions(partitions, input, "", 0)
+
+        assertThat(partitions, equalTo(expected))
+    }
 }
