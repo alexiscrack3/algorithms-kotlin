@@ -1,7 +1,8 @@
-package search
+package sort
 
 import org.junit.Assert.assertArrayEquals
 import org.junit.Test
+import sort.MergeSort
 
 class MergeSortTest {
 
@@ -17,7 +18,7 @@ class MergeSortTest {
     }
 
     @Test
-    fun `value should be found when array is equals to {38, 27, 43, 3, 9, 82, 10}`() {
+    fun `array should be sorted when array is equals to {38, 27, 43, 3, 9, 82, 10}`() {
         val array = intArrayOf(38, 27, 43, 3, 9, 82, 10)
         val expected = intArrayOf(3, 9, 10, 27, 38, 43, 82)
         val testObject = MergeSort()

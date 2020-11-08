@@ -1,4 +1,4 @@
-package search
+package sort
 
 class InsertionSort {
     fun sort(array: IntArray) {
