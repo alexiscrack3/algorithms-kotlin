@@ -83,4 +83,44 @@ class SubArrayTest {
 
         assertThat(actual, equalTo(22))
     }
+
+    @Test
+    fun `length should be 3 when sum of subarray is greater than value array is equals to {1, 4, 45, 6, 0, 19}`() {
+        val array = arrayOf(1, 4, 45, 6, 0, 19)
+        val testObject = SubArray()
+
+        val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 51)
+
+        assertThat(actual, equalTo(3))
+    }
+
+    @Test
+    fun `length should be 1 when sum of subarray is greater than value array is equals to {1, 10, 5, 2, 7}`() {
+        val array = arrayOf(1, 10, 5, 2, 7)
+        val testObject = SubArray()
+
+        val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 9)
+
+        assertThat(actual, equalTo(1))
+    }
+
+    @Test
+    fun `length should be 4 when sum of subarray is greater than value array is equals to {1, 11, 100, 1, 0, 200, 3, 2, 1, 250}`() {
+        val array = arrayOf(1, 11, 100, 1, 0, 200, 3, 2, 1, 250)
+        val testObject = SubArray()
+
+        val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 280)
+
+        assertThat(actual, equalTo(4))
+    }
+
+//    @Test
+//    fun `length should NOT BE POSSIBLE when sum of subarray is greater than value array is equals to {1, 2, 4}`() {
+//        val array = arrayOf(1, 2, 4)
+//        val testObject = SubArray()
+//
+//        val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 8)
+//
+//        assertThat(actual, equalTo(1))
+//    }
 }

@@ -27,4 +27,31 @@ class SubArray {
         }
         return result
     }
+
+    fun getSmallestSubarrayWithSumGreaterThanValue(array: Array<Int>, value: Int): Int {
+        var minLength = array.size + 1
+
+        for (start in 0 until array.size) {
+            // Initialize sum starting with current start
+            var sum = array[start]
+
+            // If first element itself is greater
+            if (sum > value) {
+                return 1
+            }
+
+            for (end in start + 1 until array.size) {
+                sum += array[end]
+
+                // If sum becomes more than x and length of
+                // this subarray is smaller than current smallest
+                // length, update the smallest length (or result)
+                val length = end - start + 1
+                if (sum > value && length < minLength) {
+                    minLength = length
+                }
+            }
+        }
+        return minLength
+    }
 }
