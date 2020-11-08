@@ -17,4 +17,14 @@ class SubArray {
         }
         return maxLength
     }
+
+    fun getSmallestPositiveNumber(array: Array<Int>): Int {
+        var result = 1
+        var i = 0
+        while (i < array.size && array[i] <= result) {
+            result += array[i]
+            i++
+        }
+        return result
+    }
 }
