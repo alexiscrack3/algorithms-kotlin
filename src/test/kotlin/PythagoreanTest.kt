@@ -1,4 +1,5 @@
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 
 class PythagoreanTest {
@@ -10,7 +11,7 @@ class PythagoreanTest {
 
         val actual = testObject.containsTriplet(array)
 
-        assertEquals(actual, true)
+        assertTrue(actual)
     }
 
     @Test
@@ -20,6 +21,6 @@ class PythagoreanTest {
 
         val actual = testObject.containsTriplet(array)
 
-        assertEquals(actual, false)
+        assertFalse(actual)
     }
 }

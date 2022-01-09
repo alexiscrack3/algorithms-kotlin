@@ -1,4 +1,4 @@
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 class PalindromeTest {
@@ -10,7 +10,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, true)
+        assertTrue(output)
     }
 
     @Test
@@ -20,7 +20,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, true)
+        assertTrue(output)
     }
 
     @Test
@@ -30,7 +30,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, true)
+        assertTrue(output)
     }
 
     @Test
@@ -40,7 +40,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, true)
+        assertTrue(output)
     }
 
     @Test
@@ -50,7 +50,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, true)
+        assertTrue(output)
     }
 
     @Test
@@ -60,7 +60,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, true)
+        assertTrue(output)
     }
 
     @Test
@@ -70,7 +70,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, false)
+        assertFalse(output)
     }
 
     @Test
@@ -80,7 +80,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertEquals(output, false)
+        assertFalse(output)
     }
 
     @Test
