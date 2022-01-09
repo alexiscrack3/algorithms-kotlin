@@ -86,6 +86,16 @@ class PalindromeTest {
     }
 
     @Test
+    fun `permutation of a text should be a palindrome when text is equals to 'Tact Coa'`() {
+        val input = "taco cat" // original word: Tact Coat
+        val testObject = Palindrome()
+
+        val output = testObject.isPalindromePermutation(input)
+
+        assertTrue(output)
+    }
+
+    @Test
     fun `result should contain all possible palindromic partitions when text is equals to 'nitin'`() {
         val input = "nitin"
         val testObject = Palindrome()

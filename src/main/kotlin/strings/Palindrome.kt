@@ -16,6 +16,20 @@ class Palindrome {
         return true
     }
 
+    fun isPalindromePermutation(text: String): Boolean {
+        val strMap = HashMap<Char, Int>()
+
+        text.replace("[^A-Za-z]".toRegex(), "").forEach {
+            strMap[it] = (strMap [it] ?: 0) + 1
+        }
+
+        val oddCharacters = strMap.count {
+            it.value.rem(2) == 1
+        }
+
+        return oddCharacters <= 1
+    }
+
     fun getPalindromicPartitions(
         partitions: MutableList<String>,
         text: String,
