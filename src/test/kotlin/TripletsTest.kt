@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.junit.Assert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class TripletsTest {
 
@@ -11,7 +10,7 @@ class TripletsTest {
 
         val actual = testObject.getCount(2)
 
-        assertThat(actual, equalTo(2))
+        assertEquals(actual, 2)
     }
 
     @Test
@@ -21,6 +20,6 @@ class TripletsTest {
 
         val actual = testObject.getCount(12)
 
-        assertThat(actual, equalTo(4))
+        assertEquals(actual, 4)
     }
 }

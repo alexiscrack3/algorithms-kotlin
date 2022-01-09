@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class StockTest {
 
@@ -11,6 +10,6 @@ class StockTest {
 
         val actual = testObject.maxProfit(array, 0, array.size - 1)
 
-        assertThat(actual, equalTo(865))
+        assertEquals(actual, 865)
     }
 }

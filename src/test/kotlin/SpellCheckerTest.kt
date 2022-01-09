@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class SpellCheckerTest {
 
@@ -11,6 +10,6 @@ class SpellCheckerTest {
 
         val actual = testObject.encode(input)
 
-        assertThat(actual, equalTo("WLDLD"))
+        assertEquals(actual, "WLDLD")
     }
 }

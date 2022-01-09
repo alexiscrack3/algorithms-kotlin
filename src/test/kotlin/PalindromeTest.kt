@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class PalindromeTest {
 
@@ -11,7 +10,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(true))
+        assertEquals(output, true)
     }
 
     @Test
@@ -21,7 +20,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(true))
+        assertEquals(output, true)
     }
 
     @Test
@@ -31,7 +30,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(true))
+        assertEquals(output, true)
     }
 
     @Test
@@ -41,7 +40,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(true))
+        assertEquals(output, true)
     }
 
     @Test
@@ -51,7 +50,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(true))
+        assertEquals(output, true)
     }
 
     @Test
@@ -61,7 +60,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(true))
+        assertEquals(output, true)
     }
 
     @Test
@@ -71,7 +70,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(false))
+        assertEquals(output, false)
     }
 
     @Test
@@ -81,7 +80,7 @@ class PalindromeTest {
 
         val output = testObject.isPalindrome(input)
 
-        assertThat(output, equalTo(false))
+        assertEquals(output, false)
     }
 
     @Test
@@ -97,7 +96,7 @@ class PalindromeTest {
         val components = mutableListOf<String>()
         testObject.getPalindromicPartitions(components, input, "", 0)
 
-        assertThat(components, equalTo(expected))
+        assertEquals(components, expected)
     }
 
     @Test
@@ -112,7 +111,7 @@ class PalindromeTest {
         val partitions = mutableListOf<String>()
         testObject.getPalindromicPartitions(partitions, input, "", 0)
 
-        assertThat(partitions, equalTo(expected))
+        assertEquals(partitions, expected)
     }
 
     @Test
@@ -132,6 +131,6 @@ class PalindromeTest {
         val partitions = mutableListOf<String>()
         testObject.getPalindromicPartitions(partitions, input, "", 0)
 
-        assertThat(partitions, equalTo(expected))
+        assertEquals(partitions, expected)
     }
 }

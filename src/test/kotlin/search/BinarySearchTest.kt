@@ -1,8 +1,7 @@
 package search
 
-import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class BinarySearchTest {
 
@@ -13,7 +12,7 @@ class BinarySearchTest {
 
         val actual = testObject.binarySearch(array, 0, array.size - 1, 10)
 
-        assertThat(actual, equalTo(3))
+        assertEquals(actual, 3)
     }
 
     @Test
@@ -23,7 +22,7 @@ class BinarySearchTest {
 
         val actual = testObject.binarySearch(array, 0, array.size - 1, 15)
 
-        assertThat(actual, equalTo(1))
+        assertEquals(actual, 1)
     }
 
     @Test
@@ -33,7 +32,7 @@ class BinarySearchTest {
 
         val actual = testObject.pivotedBinarySearch(array, array.size, 3)
 
-        assertThat(actual, equalTo(0))
+        assertEquals(actual, 0)
     }
 
     @Test
@@ -43,6 +42,6 @@ class BinarySearchTest {
 
         val actual = testObject.pivotedBinarySearch(array, array.size, 3)
 
-        assertThat(actual, equalTo(8))
+        assertEquals(actual, 8)
     }
 }

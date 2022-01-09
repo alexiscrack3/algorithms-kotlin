@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.junit.Assert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertArrayEquals
+import org.junit.jupiter.api.Test
 
 class ZigZagTest {
 
@@ -12,7 +11,7 @@ class ZigZagTest {
 
         val actual = testObject.convert()
 
-        assertThat(actual, equalTo(expected))
+        assertArrayEquals(actual, expected)
     }
 
     @Test
@@ -23,7 +22,7 @@ class ZigZagTest {
 
         val actual = testObject.convert()
 
-        assertThat(actual, equalTo(expected))
+        assertArrayEquals(actual, expected)
     }
 
     @Test
@@ -34,6 +33,6 @@ class ZigZagTest {
 
         val actual = testObject.convert()
 
-        assertThat(actual, equalTo(expected))
+        assertArrayEquals(actual, expected)
     }
 }

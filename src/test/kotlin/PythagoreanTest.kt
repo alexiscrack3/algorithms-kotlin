@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.junit.Assert.*
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class PythagoreanTest {
 
@@ -11,7 +10,7 @@ class PythagoreanTest {
 
         val actual = testObject.containsTriplet(array)
 
-        assertThat(actual, equalTo(true))
+        assertEquals(actual, true)
     }
 
     @Test
@@ -21,6 +20,6 @@ class PythagoreanTest {
 
         val actual = testObject.containsTriplet(array)
 
-        assertThat(actual, equalTo(false))
+        assertEquals(actual, false)
     }
 }

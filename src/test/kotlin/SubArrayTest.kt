@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class SubArrayTest {
 
@@ -11,7 +10,7 @@ class SubArrayTest {
 
         val actual = testObject.getLengthOfLongestContiguousSubarray(array)
 
-        assertThat(actual, equalTo(3))
+        assertEquals(actual, 3)
     }
 
     @Test
@@ -21,7 +20,7 @@ class SubArrayTest {
 
         val actual = testObject.getLengthOfLongestContiguousSubarray(array)
 
-        assertThat(actual, equalTo(2))
+        assertEquals(actual, 2)
     }
 
     @Test
@@ -31,7 +30,7 @@ class SubArrayTest {
 
         val actual = testObject.getLengthOfLongestContiguousSubarray(array)
 
-        assertThat(actual, equalTo(5))
+        assertEquals(actual, 5)
     }
 
     @Test
@@ -41,7 +40,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestPositiveNumber(array)
 
-        assertThat(actual, equalTo(2))
+        assertEquals(actual, 2)
     }
 
     @Test
@@ -51,7 +50,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestPositiveNumber(array)
 
-        assertThat(actual, equalTo(5))
+        assertEquals(actual, 5)
     }
 
     @Test
@@ -61,7 +60,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestPositiveNumber(array)
 
-        assertThat(actual, equalTo(10))
+        assertEquals(actual, 10)
     }
 
     @Test
@@ -71,7 +70,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestPositiveNumber(array)
 
-        assertThat(actual, equalTo(4))
+        assertEquals(actual, 4)
     }
 
     @Test
@@ -81,7 +80,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestPositiveNumber(array)
 
-        assertThat(actual, equalTo(22))
+        assertEquals(actual, 22)
     }
 
     @Test
@@ -91,7 +90,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 51)
 
-        assertThat(actual, equalTo(3))
+        assertEquals(actual, 3)
     }
 
     @Test
@@ -101,7 +100,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 9)
 
-        assertThat(actual, equalTo(1))
+        assertEquals(actual, 1)
     }
 
     @Test
@@ -111,7 +110,7 @@ class SubArrayTest {
 
         val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 280)
 
-        assertThat(actual, equalTo(4))
+        assertEquals(actual, 4)
     }
 
 //    @Test
@@ -121,6 +120,6 @@ class SubArrayTest {
 //
 //        val actual = testObject.getSmallestSubarrayWithSumGreaterThanValue(array, 8)
 //
-//        assertThat(actual, equalTo(1))
+//        assertEquals(actual, 1)
 //    }
 }

@@ -1,6 +1,5 @@
-import org.hamcrest.CoreMatchers.equalTo
-import org.hamcrest.MatcherAssert.assertThat
-import org.junit.Test
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 class MeanIndexerTest {
 
@@ -17,9 +16,9 @@ class MeanIndexerTest {
 
         val actual = testObject.getIndexedGroups(listOfLists)
 
-        assertThat(actual[0], equalTo(listOf(0, 4)))
-        assertThat(actual[1], equalTo(listOf(1)))
-        assertThat(actual[2], equalTo(listOf(2)))
-        assertThat(actual[3], equalTo(listOf(3)))
+        assertEquals(actual[0], listOf(0, 4))
+        assertEquals(actual[1], listOf(1))
+        assertEquals(actual[2], listOf(2))
+        assertEquals(actual[3], listOf(3))
     }
 }
