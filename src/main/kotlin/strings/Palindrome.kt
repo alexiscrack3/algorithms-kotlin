@@ -1,3 +1,5 @@
+package strings
+
 class Palindrome {
 
     fun isPalindrome(text: String, start: Int = 0, end: Int = text.length - 1): Boolean {

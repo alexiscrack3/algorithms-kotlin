@@ -1,10 +1,12 @@
+package strings
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 class PalindromeTest {
 
     @Test
-    fun `text should be a palindrome when text is equals to "a"`() {
+    fun `text should be a palindrome when text is equals to 'a'`() {
         val input = "a"
         val testObject = Palindrome()
 
@@ -14,7 +16,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `text should be a palindrome when text is equals to "aba"`() {
+    fun `text should be a palindrome when text is equals to 'aba'`() {
         val input = "aba"
         val testObject = Palindrome()
 
@@ -24,7 +26,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `text should be a palindrome when text is equals to "abba"`() {
+    fun `text should be a palindrome when text is equals to 'abba'`() {
         val input = "abba"
         val testObject = Palindrome()
 
@@ -34,7 +36,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `text should be a palindrome when text is equals to "ababa"`() {
+    fun `text should be a palindrome when text is equals to 'ababa'`() {
         val input = "ababa"
         val testObject = Palindrome()
 
@@ -44,7 +46,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `text should be a palindrome when text is equals to "civic"`() {
+    fun `text should be a palindrome when text is equals to 'civic'`() {
         val input = "civic"
         val testObject = Palindrome()
 
@@ -54,7 +56,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `text should be a palindrome when text is equals to "level"`() {
+    fun `text should be a palindrome when text is equals to 'level'`() {
         val input = "level"
         val testObject = Palindrome()
 
@@ -64,7 +66,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `text should not be a palindrome when text is equals to "abaa"`() {
+    fun `text should not be a palindrome when text is equals to 'abaa'`() {
         val input = "abaa"
         val testObject = Palindrome()
 
@@ -74,7 +76,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `text should not be a palindrome when text is equals to "ababb"`() {
+    fun `text should not be a palindrome when text is equals to 'ababb'`() {
         val input = "ababb"
         val testObject = Palindrome()
 
@@ -84,7 +86,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `result should contain all possible palindromic partitions when text is equals to "nitin"`() {
+    fun `result should contain all possible palindromic partitions when text is equals to 'nitin'`() {
         val input = "nitin"
         val testObject = Palindrome()
         val expected = listOf(
@@ -100,7 +102,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `result should contain all possible palindromic partitions when text is equals to "geeks"`() {
+    fun `result should contain all possible palindromic partitions when text is equals to 'geeks'`() {
         val input = "geeks"
         val testObject = Palindrome()
         val expected = listOf(
@@ -115,7 +117,7 @@ class PalindromeTest {
     }
 
     @Test
-    fun `result should contain all possible palindromic partitions when text is equals to "abaaba"`() {
+    fun `result should contain all possible palindromic partitions when text is equals to 'abaaba'`() {
         val input = "abaaba"
         val testObject = Palindrome()
         val expected = listOf(
