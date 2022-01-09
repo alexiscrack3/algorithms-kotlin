@@ -4,6 +4,14 @@ import org.junit.jupiter.api.Test
 class StringExercisesTest {
 
     @Test
+    fun `urlifiy should replace all spaces in a string with '%20'`() {
+        val input = "Mr John Smith   " // 13
+        val testObject = StringExercises()
+        val actual = testObject.urlify(input, 13)
+        assertEquals("Mr%20John%20Smith", actual)
+    }
+
+    @Test
     fun `isPermutation should return true when string is permutation of the other`() {
         val strA = "abc"
         val strB = "cba"
